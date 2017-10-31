@@ -17,11 +17,14 @@ body {
 
 .wrapper {
     max-width: 1366px;
-    padding-left: 40px;
-    padding-right: 40px;
     margin: 0 auto;
+    -webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.25);
 }
 
+
+/* шапка */
 .header {
     background-color: #FFFFFF;
     height: 55px;
@@ -46,11 +49,78 @@ body {
     letter-spacing: 1px;
 }
 
+.header__link:hover {
+    color: #81b3d2;
+}
+
+.header__link:active {
+    color: #cacaca;
+}
+
+.header__link--active {
+    color: #766357;
+}
+
+/*  секция заглавной страницы */
 .hero {
     background: url('../img/bg.jpg');
-    background-position: center center;
-    background-size: cover;
+    background-position: left -95px;
     background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-    height: 510px;
+    height: 550px;
+}
+
+.hero__headings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 95px;
+    margin-left: 35px;
+}
+
+.hero__welcome {
+    padding-bottom: 10px;
+}
+
+.hero__sedona {
+    padding: 65px;
+}
+
+.hero__canyon {
+    padding-bottom: 17px;
+}
+
+.hero__shape {
+    width: 100%;
+}
+
+/* небольшой абзац */
+.description {
+    background-color: #FFFFFF;
+    height: 215px;
+    width: 100%;
+}
+
+.description__text {
+    text-align: center;
+    padding: 50px;
+}
+
+.text__bold {
+    font-size: 21px;
+    font-family: 'ptsansbold';
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.text__light {
+    font-size: 14px;
+    color: #333333;
+    font-family: 'ptsans';
+    text-transform: uppercase;
+    line-height: 26px;
 }
