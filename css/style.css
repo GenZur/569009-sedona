@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "ptsans";
+    src: url("../fonts/web/ptsans.woff2") format("woff2"),
+           url("../fonts/web/ptsans.woff") format("woff");
+   }
+
+@font-face {
+font-family: "ptsansbold";
+src: url("../fonts/web/ptsansbold.woff2") format("woff2"),
+        url("../fonts/web/ptsansbold.woff") format("woff");
+}
