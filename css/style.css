@@ -1,11 +1,56 @@
 @font-face {
-    font-family: "ptsans";
+    font-family: 'ptsans';
     src: url("../fonts/web/ptsans.woff2") format("woff2"),
            url("../fonts/web/ptsans.woff") format("woff");
    }
 
 @font-face {
-font-family: "ptsansbold";
+font-family: 'ptsansbold';
 src: url("../fonts/web/ptsansbold.woff2") format("woff2"),
         url("../fonts/web/ptsansbold.woff") format("woff");
+}
+
+body {
+    background-color: #f1f1f1;
+    font-family: 'ptsans';
+}
+
+.wrapper {
+    max-width: 1366px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #FFFFFF;
+    height: 55px;
+}
+
+.header__list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header__item {
+    padding-top: 15px;
+}
+
+.header__link {
+    font-family: 'ptsansbold';
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    line-height: 26px;
+    letter-spacing: 1px;
+}
+
+.hero {
+    background: url('../img/bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 510px;
 }
