@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Основной проект на курсе в HTMLacademy">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript,Sedona,Genadijs,Zuravlovs,интенсив">
+  <meta name="author" content="Genadijs Zuravlovs">
+  <!-- Заголовок страницы -->
+  <title>HTML Academy: Седона</title>
+  <!-- подключение css -->
+
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <a href="index.html" class="header__link">
+          <img src="img/logo.png" alt="Логотип Седоны" width="135" height="70" class="header__logo">
+        </a>
+        <ul class="header__list">
+          <li class="header__item header__item--active">
+            <a href="#info" class="header__link">информация</a>
+          </li>
+          <li class="header__item">
+            <a href="#media" class="header__link">фото и видео</a>
+          </li>
+          <li class="header__item">
+            <a href="#map" class="header__link">карта штата</a>
+          </li>
+          <li class="header__item">
+            <a href="#hotel" class="header__link">гостиницы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр услуг</h2>
+        <!-- здесть будет форма -->
+      </section>
+      <section class="hotels">
+        <h2 class="visually-hidden">гостиницы</h2>
+        <div class="hotels__head">
+            <b class="hotels__found">найдено:3</b>
+            <ul class="hotel__filters">
+                <li class="filters__item">сортировка:</li>
+                <li class="filters__item filters__item--active">по цене</li>
+                <li class="filters__item filters__item--check">по типу</li>
+                <li class="filters__item filters__item--check">по рейтингу</li>
+            </ul>
+            <!-- пагинация стрелочками -->
+        </div>
+        <ul class="hotels__list">
+            <li class="hotels__item">
+                <img src="#" alt="гостиница Amara resort & spa">
+                <h2 class="hotel__title">Amara resort & spa</h2>
+                <b class="hotel__price">гостиница</b>
+                <b class="hotel__price">от 4000 Р.</b>
+                <a href="#" class="hotel__about-link">подробнее</a>
+                <button class="hotel__book-btn">забронировать</button>
+                <p class="hotel__rate">рейтинг: 8,5</p>
+            </li>
+            <li class="hotels__item">
+                <img src="#" alt="мотель desert quail inn">
+                <h2 class="hotel__title">desert quail inn</h2>
+                <b class="hotel__price">мотель</b>
+                <b class="hotel__price">от 3000 Р.</b>
+                <a href="#" class="hotel__about-link">подробнее</a>
+                <button class="hotel__book-btn">забронировать</button>
+                <p class="hotel__rate">рейтинг: 8,9</p>
+            </li>
+            <li class="hotels__item">
+                <img src="#" alt="апартаменты villas at poco diablo">
+                <h2 class="hotel__title">villas at poco diablo</h2>
+                <b class="hotel__price">апартаменты</b>
+                <b class="hotel__price">от 2000 Р.</b>
+                <a href="#" class="hotel__about-link">подробнее</a>
+                <button class="hotel__book-btn">забронировать</button>
+                <p class="hotel__rate">рейтинг: 9,2</p>
+            </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <a href="index.html" class="footer__link">#VISITSEDONA</a>
+      <div class="footer__social">
+        <h2 class="visually-hidden">социальные сети</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link">твиттер</a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">фейсбук</a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">ютуб</a>
+          </li>
+        </ul>
+      </div>
+      <p class="footer__copyright">
+        <b>website by</b>
+        <a href="https://htmlacademy.ru">
+          <img href="#" alt="логотип HTMLacademy">
+        </a>
+      </p>
+    </footer>
+  </body>
