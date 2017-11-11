@@ -1,18 +1,22 @@
 @font-face {
     font-family: 'ptsans';
-    src: url("../fonts/web/ptsans.woff2") format("woff2"),
-           url("../fonts/web/ptsans.woff") format("woff");
+    src: url("../fonts/ptsans.woff2") format("woff2"),
+           url("../fonts/ptsans.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
    }
 
 @font-face {
 font-family: 'ptsansbold';
-src: url("../fonts/web/ptsansbold.woff2") format("woff2"),
-        url("../fonts/web/ptsansbold.woff") format("woff");
+src: url("../fonts/ptsansbold.woff2") format("woff2"),
+        url("../fonts/ptsansbold.woff") format("woff");
+font-weight: 700;
+font-style: bold;
 }
 
 body {
     background-color: #f1f1f1;
-    font-family: 'ptsans';
+    font-family: 'ptsans', Arial, Helvetica, sans-serif;
 }
 
 .wrapper {
@@ -27,7 +31,7 @@ body {
 /* шапка */
 .header {
     background-color: #FFFFFF;
-    height: 55px;
+    max-height: 55px;
 }
 
 .header__list {
@@ -40,7 +44,7 @@ body {
 }
 
 .header__link {
-    font-family: 'ptsansbold';
+    font-family: 'ptsansbold', Arial, Helvetica, sans-serif;
     font-size: 14px;
     text-decoration: none;
     text-transform: uppercase;
@@ -110,7 +114,7 @@ body {
 
 .text__bold {
     font-size: 21px;
-    font-family: 'ptsansbold';
+    font-family: 'ptsansbold', Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     padding-bottom: 30px;
     line-height: 26px;
@@ -120,7 +124,7 @@ body {
 .text__light {
     font-size: 14px;
     color: #333333;
-    font-family: 'ptsans';
+    font-family: 'ptsans', Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     line-height: 26px;
 }
