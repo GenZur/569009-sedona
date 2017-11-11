@@ -18,16 +18,16 @@
         </a>
         <ul class="header__list">
           <li class="header__item header__item--active">
-            <a href="#info" class="header__link">информация</a>
+            <a href="info.html" class="header__link">информация</a>
           </li>
           <li class="header__item">
-            <a href="#media" class="header__link">фото и видео</a>
+            <a href="media.html" class="header__link">фото и видео</a>
           </li>
           <li class="header__item">
-            <a href="#map" class="header__link">карта штата</a>
+            <a href="map.html" class="header__link">карта штата</a>
           </li>
           <li class="header__item">
-            <a href="#hotel" class="header__link">гостиницы</a>
+            <a href="hotels.html" class="header__link">гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -40,43 +40,65 @@
       <section class="hotels">
         <h2 class="visually-hidden">гостиницы</h2>
         <div class="hotels__head">
-            <b class="hotels__found">найдено:3</b>
-            <ul class="hotel__filters">
-                <li class="filters__item">сортировка:</li>
-                <li class="filters__item filters__item--active">по цене</li>
-                <li class="filters__item filters__item--check">по типу</li>
-                <li class="filters__item filters__item--check">по рейтингу</li>
-            </ul>
-            <!-- пагинация стрелочками -->
+          <b class="hotels__found">найдено:3</b>
+          <ul class="hotel__filters">
+            <li class="filters__item">сортировка:</li>
+            <li class="filters__item filters__item--active">по цене</li>
+            <li class="filters__item filters__item--check">по типу</li>
+            <li class="filters__item filters__item--check">по рейтингу</li>
+          </ul>
+          <div class="arrow-up"></div>
+          <div class="arrow-down"></div>
         </div>
         <ul class="hotels__list">
-            <li class="hotels__item">
-                <img src="#" alt="гостиница Amara resort & spa">
-                <h2 class="hotel__title">Amara resort & spa</h2>
-                <b class="hotel__price">гостиница</b>
-                <b class="hotel__price">от 4000 Р.</b>
-                <a href="#" class="hotel__about-link">подробнее</a>
-                <button class="hotel__book-btn">забронировать</button>
-                <p class="hotel__rate">рейтинг: 8,5</p>
-            </li>
-            <li class="hotels__item">
-                <img src="#" alt="мотель desert quail inn">
-                <h2 class="hotel__title">desert quail inn</h2>
-                <b class="hotel__price">мотель</b>
-                <b class="hotel__price">от 3000 Р.</b>
-                <a href="#" class="hotel__about-link">подробнее</a>
-                <button class="hotel__book-btn">забронировать</button>
-                <p class="hotel__rate">рейтинг: 8,9</p>
-            </li>
-            <li class="hotels__item">
-                <img src="#" alt="апартаменты villas at poco diablo">
-                <h2 class="hotel__title">villas at poco diablo</h2>
-                <b class="hotel__price">апартаменты</b>
-                <b class="hotel__price">от 2000 Р.</b>
-                <a href="#" class="hotel__about-link">подробнее</a>
-                <button class="hotel__book-btn">забронировать</button>
-                <p class="hotel__rate">рейтинг: 9,2</p>
-            </li>
+          <li class="hotels__item">
+            <div class="hotel__img">
+              <img src="#" alt="гостиница Amara resort & spa">
+            </div>
+            <div class="hotel__card">
+              <h2 class="hotel__title">Amara resort & spa</h2>
+              <b class="hotel__price">гостиница</b>
+              <b class="hotel__price">от 4000 Р.</b>
+              <a href="#" class="hotel__about-link">подробнее</a>
+              <button class="hotel__book-btn">забронировать</button>
+            </div>
+            <div class="hotel__rating">
+              <div class="hotel__stars"></div>
+              <p class="hotel__rate">рейтинг: 8,5</p>
+            </div>
+          </li>
+          <li class="hotels__item">
+            <div class="hotel__img">
+              <img src="#" alt="мотель desert quail inn">
+            </div>
+            <div class="hotel__card">
+              <h2 class="hotel__title">desert quail inn</h2>
+              <b class="hotel__price">мотель</b>
+              <b class="hotel__price">от 3000 Р.</b>
+              <a href="#" class="hotel__about-link">подробнее</a>
+              <button class="hotel__book-btn">забронировать</button>
+            </div>
+            <div class="hotel__rating">
+              <div class="hotel__stars"></div>
+              <p class="hotel__rate">рейтинг: 8,9</p>
+            </div>
+          </li>
+          <li class="hotels__item">
+            <div class="hotel__img">
+              <img src="#" alt="апартаменты villas at poco diablo">
+            </div>
+            <div class="hotel__card">
+              <h2 class="hotel__title">villas at poco diablo</h2>
+              <b class="hotel__price">апартаменты</b>
+              <b class="hotel__price">от 2000 Р.</b>
+              <a href="#" class="hotel__about-link">подробнее</a>
+              <button class="hotel__book-btn">забронировать</button>
+            </div>
+            <div class="hotel__rating">
+              <div class="hotel__stars"></div>
+              <p class="hotel__rate">рейтинг: 9,2</p>
+            </div>
+          </li>
         </ul>
       </section>
     </main>
