@@ -101,7 +101,30 @@
       <h2 class="form__title">заинтересовались?</h2>
       <p class="form__text">укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <button class="form__btn">поиск гостиницы в седоне</button>
-      <!-- форма тут наверное -->
+      <!-- форма -->
+      <form action="#" class="form">
+        <div class="form__group">
+          <label for="arrival" class="form__label">Дата заезда:</label>
+          <input type="text" class="form__input" placeholder="24 апреля 2017">
+        </div>
+        <div class="form__group">
+          <label for="departure" class="form__label">Дата выезда:</label>
+          <input type="text" class="form__input" placeholder="4 июля 2017">
+        </div>
+        <div class="form__group">
+          <label for="adult" class="form__label">Взрослые:</label>
+          <span class="form__minus"></span>
+          <input type="text" class="form__input" placeholder="2">
+          <span class="form__plus"></span>
+        </div>
+        <div class="form__group">
+          <label for="adult" class="form__label">Дети:</label>
+          <span class="form__minus"></span>
+          <input type="text" class="form__input" placeholder="0">
+          <span class="form__plus"></span>
+        </div>
+        <a href="#" class="form__btn">Найти</a>
+      </form>
     </section>
     <!-- карта -->
   </main>
