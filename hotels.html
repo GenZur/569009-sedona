@@ -35,7 +35,32 @@
     <main class="container">
       <section class="filters">
         <h2 class="visually-hidden">Фильтр услуг</h2>
-        <!-- здесть будет форма -->
+        <!-- форма -->
+        <form action="#" method="get" class="filters-form">
+          <div class="filters-form-infastructure">
+            <h3 class="infastructure__title">Инфраструктура</h3>
+            <input type="checkbox" name="infastructure" value="Бассейн" class="infastructure__input" checked> Бассейн
+            <br>
+            <input type="checkbox" name="infastructure" value="Парвковка" class="infastructure__input"> Парвковка
+            <br>
+            <input type="checkbox" name="infastructure" value="Wi-Fi" class="infastructure__input"> Wi-Fi
+          </div>
+          <div class="filters-form__type">
+            <h3 class="type__title">Тип жилья:</h3>
+            <input type="checkbox" name="type" value="Бассейн" class="type__input" checked> Гостиница
+            <br>
+            <input type="checkbox" name="type" value="Парвковка" class="type__input" checked> Мотель
+            <br>
+            <input type="checkbox" name="type" value="Wi-Fi" class="type__input" checked> Апартаменты
+          </div>
+          <div class="filters-form__pay">
+              <h3 class="type__title">Стоимость в сутки (Р):</h3>
+              <input type="text" class="pay__input" placeholder="От 0">
+              <input type="text" class="pay__input" placeholder="От 3000">
+              <span></span>
+              <a href="#" class="filters__btn">Показать</a>
+          </div>
+        </form>
       </section>
       <section class="hotels">
         <h2 class="visually-hidden">гостиницы</h2>
