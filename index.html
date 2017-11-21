@@ -47,7 +47,7 @@
       <h2 class="visually-hidden">Преимущества Седоны</h2>
       <section class="advantages__first">
         <div class="advantages__desc">
-          <h3 class="advantages__title">Настоящий городок</h3>
+          <h2 class="advantages__title">Настоящий городок</h2>
           <p class="advantages__text">- №1 -</p>
           <p class="advantages__text">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
           <div class="advantages__photo"></div>
@@ -55,40 +55,40 @@
         <div class="feature">
           <ul class="feature__list">
             <li class="feature__item">
-              <h4 class="feature__title">Жилье</h4>
+              <h2 class="feature__title">Жилье</h2>
               <p class="feature__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
             <li class="feature__item">
-              <h4 class="feature__title">Еда</h4>
+              <h2 class="feature__title">Еда</h2>
               <p class="feature__text">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="feature__item">
-              <h4 class="feature__title">Сувениры</h4>
+              <h2 class="feature__title">Сувениры</h2>
               <p class="feature__text">не тольео китайского, но и местного производства!</p>
             </li>
           </ul>
         </div>
-        <section class="advantages__second">
+        <section class="advantages2">
           <div class="advantages__desc">
             <div class="advantages__photo"></div>
-            <h3 class="advantages__title">там есть мост дьявола</h3>
+            <h2 class="advantages__title">там есть мост дьявола</h2>
             <p class="advantages__text">- №2 -</p>
             <p class="advantages__text">да, по нему можно пройти! если конечно вы осмелитесь</p>
           </div>
           <div class="feature2">
             <ul class="feature2__list">
               <li class="feature2__item">
-                <h4 class="feautre__title">небольшая площадь</h4>
+                <h2 class="feautre__title">небольшая площадь</h2>
                 <p class="advantages__text">- №3 -</p>
                 <p class="advantages__text">все достопримечательности находятся очень близко</p>
               </li>
               <li class="feature2__item">
-                <h4 class="feautre__title">красивая дорога</h4>
+                <h2 class="feautre__title">красивая дорога</h2>
                 <p class="advantages__text">- №4 -</p>
                 <p class="advantages__text">ехать в седону из лас-вегаса совсем не скучно!</p>
               </li>
               <li class="feature2__item">
-                <h4 class="feautre__title">мало туристов</h4>
+                <h2 class="feautre__title">мало туристов</h2>
                 <p class="advantages__text">- №5 -</p>
                 <p class="advantages__text">большинтсов едет в гранд каньон и толпится там</p>
               </li>
@@ -105,25 +105,25 @@
       <form action="#" class="form">
         <div class="form__group">
           <label for="arrival" class="form__label">Дата заезда:</label>
-          <input type="text" class="form__input" placeholder="24 апреля 2017">
+          <input type="text" class="form__input" id="arrival" placeholder="24 апреля 2017">
         </div>
         <div class="form__group">
           <label for="departure" class="form__label">Дата выезда:</label>
-          <input type="text" class="form__input" placeholder="4 июля 2017">
+          <input type="text" class="form__input" id="departure" placeholder="4 июля 2017">
         </div>
         <div class="form__group">
-          <label for="adult" class="form__label">Взрослые:</label>
+          <label for="adults" class="form__label">Взрослые:</label>
           <span class="form__minus"></span>
-          <input type="text" class="form__input" placeholder="2">
-          <span class="form__plus"></span>
+          <input type="text" class="form__input" id="adults" placeholder="2">
+          <button class="form__plus">+</button>
         </div>
         <div class="form__group">
-          <label for="adult" class="form__label">Дети:</label>
-          <span class="form__minus"></span>
-          <input type="text" class="form__input" placeholder="0">
-          <span class="form__plus"></span>
+          <label for="kids" class="form__label">Дети:</label>
+          <button class="form__minus">-</button>
+          <input type="text" class="form__input" id="kids" placeholder="0">
+          <button class="form__plus">+</button>
         </div>
-        <a href="#" class="form__btn">Найти</a>
+        <button type="submit" class="form__btn">Найти</button>
       </form>
     </section>
     <!-- карта -->
