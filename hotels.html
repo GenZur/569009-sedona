@@ -36,30 +36,36 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтр услуг</h2>
         <!-- форма -->
-        <form action="#" method="get" class="filters-form">
-          <div class="filters-form-infastructure">
-            <h3 class="infastructure__title">Инфраструктура</h3>
-            <input type="checkbox" name="infastructure" value="Бассейн" class="infastructure__input" checked> Бассейн
+        <form action="https://echo.htmlacademy.ru" method="get" class="filters-form">
+          <fieldset class="filters-form-infastructure">
+            <legend class="infastructure__title">Инфраструктура:</legend>
+            <input type="checkbox" name="swimming-pool" id="swimming-pool" value="Бассейн" class="infastructure__input" checked>
+            <label for="swimming-pool" class="infastructure__label">Бассейн</label>
             <br>
-            <input type="checkbox" name="infastructure" value="Парвковка" class="infastructure__input"> Парвковка
+            <input type="checkbox" name="parking" id="parking" value="Парковка" class="infastructure__input">
+            <label for="parking" class="infastructure__label">Парвковка</label>
             <br>
-            <input type="checkbox" name="infastructure" value="Wi-Fi" class="infastructure__input"> Wi-Fi
-          </div>
-          <div class="filters-form__type">
-            <h3 class="type__title">Тип жилья:</h3>
-            <input type="checkbox" name="type" value="Бассейн" class="type__input" checked> Гостиница
+            <input type="checkbox" name="wifi" id="wifi" value="Wi-Fi" class="infastructure__input">
+            <label for="wifi" class="infastructure__label">Wi-Fi</label>
+          </fieldset>
+          <fieldset class="filters-form__type">
+            <legend class="type__title">Тип жилья:</legend>
+            <input type="checkbox" name="hotel" id="hotel" value="Гостиница" class="type__input" checked>
+            <label for="hotel" class="type__label">Гостиница</label>
             <br>
-            <input type="checkbox" name="type" value="Парвковка" class="type__input" checked> Мотель
+            <input type="checkbox" name="motel" id="motel" value="Мотель" class="type__input" checked>
+            <label for="motel" class="type__label">Мотель</label>
             <br>
-            <input type="checkbox" name="type" value="Wi-Fi" class="type__input" checked> Апартаменты
-          </div>
-          <div class="filters-form__pay">
-              <h3 class="type__title">Стоимость в сутки (Р):</h3>
-              <input type="text" class="pay__input" placeholder="От 0">
-              <input type="text" class="pay__input" placeholder="От 3000">
-              <span></span>
-              <a href="#" class="filters__btn">Показать</a>
-          </div>
+            <input type="checkbox" name="apartament" id="apartament" value="Апартаменты" class="type__input" checked>
+            <label for="apartament" class="type__label">Апартаменты</label>
+          </fieldset>
+          <fieldset class="filters-form__pay">
+            <legend class="pay__title">Стоимость в сутки (Р):</legend>
+            <input type="text" class="pay__input" placeholder="От 0">
+            <input type="text" class="pay__input" placeholder="От 3000">
+            <input type="range">
+            <button href="#" class="filters__btn">Показать</button>
+          </fieldset>
         </form>
       </section>
       <section class="hotels">
@@ -68,14 +74,14 @@
           <b class="hotels__found">найдено:3</b>
           <ul class="hotel__filters">
             <li class="filters__item">сортировка:</li>
-            <li class="filters__item filters__item--active">по цене</li>
-            <li class="filters__item">по типу</li>
-            <li class="filters__item">по рейтингу</li>
+            <li class="filters__item filters__item--active"><a href="#">по цене</a></li>
+            <li class="filters__item"><a href="#">по типу</a></li>
+            <li class="filters__item"><a href="#">по рейтингу</a></li>
           </ul>
           <div class="arrow-up"></div>
           <div class="arrow-down arrow-down--active"></div>
         </div>
-        <!-- лист отелей -->
+        <h2 class="visually-hidden">Список найденных гостиниц</h2>
         <ul class="hotels__list">
           <li class="hotels__item">
             <div class="hotel__img">
@@ -159,7 +165,7 @@
       <p class="footer__copyright">
         <b>website by</b>
         <a href="https://htmlacademy.ru">
-          <img href="#" alt="логотип HTMLacademy">
+          <img src="img/logo_name.svg" alt="логотип HTMLacademy" width="115" height="41">
         </a>
       </p>
     </footer>

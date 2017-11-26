@@ -35,8 +35,8 @@
   </header>
   <main class="container">
     <section class="welcome">
-      <h1 class="visually-hidden">Седона</h1>
-      <img src="img/welcome.png" alt="Welcome to the gorgeous Sedona" width="458" height="352" class="welcome__text" >
+      <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+      <img src="img/welcome.png" alt="Welcome to the gorgeous Sedona" width="458" height="352" class="welcome__text">
       <!-- сюда идёт разделитель между секциями -->
     </section>
     <section class="intro">
@@ -64,7 +64,7 @@
             </li>
             <li class="feature__item">
               <h2 class="feature__title">Сувениры</h2>
-              <p class="feature__text">не тольео китайского, но и местного производства!</p>
+              <p class="feature__text">не только китайского, но и местного производства!</p>
             </li>
           </ul>
         </div>
@@ -102,32 +102,33 @@
       <p class="form__text">укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <button class="form__btn">поиск гостиницы в седоне</button>
       <!-- форма -->
-      <form action="#" class="form">
-        <div class="form__group">
+      <form action="https://echo.htmlacademy.ru" class="form" method="get">
+        <p class="form__group">
           <label for="arrival" class="form__label">Дата заезда:</label>
           <input type="text" class="form__input" id="arrival" placeholder="24 апреля 2017">
-        </div>
-        <div class="form__group">
+        </p>
+        <p class="form__group">
           <label for="departure" class="form__label">Дата выезда:</label>
           <input type="text" class="form__input" id="departure" placeholder="4 июля 2017">
-        </div>
-        <div class="form__group">
+        </p>
+        <p class="form__group">
           <label for="adults" class="form__label">Взрослые:</label>
-          <span class="form__minus"></span>
+          <button class="form__minus">-</button>
           <input type="text" class="form__input" id="adults" placeholder="2">
           <button class="form__plus">+</button>
-        </div>
-        <div class="form__group">
+        </p>
+        <p class="form__group">
           <label for="kids" class="form__label">Дети:</label>
           <button class="form__minus">-</button>
           <input type="text" class="form__input" id="kids" placeholder="0">
           <button class="form__plus">+</button>
-        </div>
+        </p>
         <button type="submit" class="form__btn">Найти</button>
       </form>
     </section>
     <!-- карта -->
     <section class="map">
+      <h2 class="visually-hidden">Как до нас добраться?</h2>
       <img src="img/map.jpg" alt="Карта Седоны" width="1200" height="475" class="map__img">
     </section>
   </main>
@@ -141,7 +142,7 @@
     <p class="footer__copyright">
       <b>website by</b>
       <a href="https://htmlacademy.ru">
-        <img href="#" alt="логотип HTMLacademy">
+        <img src="img/logo_name.svg" alt="логотип HTMLacademy" width="115" height="41">
       </a>
     </p>
   </footer>
