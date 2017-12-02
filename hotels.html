@@ -37,37 +37,54 @@
         <h2 class="visually-hidden">Фильтр услуг</h2>
         <!-- форма -->
         <form action="https://echo.htmlacademy.ru" method="get" class="filters-form">
-          <p class="filters-form-infastructure">
-            <h2 class="filters-title filters-title__infastructure">Инфраструктура:</h2>
+          <fieldset class="filters-form-infastructure">
+            <legend class="filters-title filters-title__infastructure">Инфраструктура:</legend>
+            <p>
             <input type="checkbox" name="swimming-pool" id="swimming-pool" value="Бассейн" class="infastructure__input" checked>
             <label for="swimming-pool" class="infastructure__label">Бассейн</label>
-            <br>
+            </p>
+            <p>
             <input type="checkbox" name="parking" id="parking" value="Парковка" class="infastructure__input">
             <label for="parking" class="infastructure__label">Парковка</label>
-            <br>
+            </p>
+            <p>
             <input type="checkbox" name="wifi" id="wifi" value="Wi-Fi" class="infastructure__input">
             <label for="wifi" class="infastructure__label">Wi-Fi</label>
-          </p>
-          <p class="filters-form__type">
-            <h2 class=" filters-title filters-title__type">Тип жилья:</h2>
+            </p>
+          </fieldset>
+          <fieldset class="filters-form__type">
+            <legend class=" filters-title filters-title__type">Тип жилья:</legend>
+            <p>
             <input type="checkbox" name="hotel" id="hotel" value="Гостиница" class="type__input" checked>
             <label for="hotel" class="type__label">Гостиница</label>
-            <br>
+            </p>
+            <p>
             <input type="checkbox" name="motel" id="motel" value="Мотель" class="type__input" checked>
             <label for="motel" class="type__label">Мотель</label>
-            <br>
+            </p>
+            <p>
             <input type="checkbox" name="apartament" id="apartament" value="Апартаменты" class="type__input" checked>
             <label for="apartament" class="type__label">Апартаменты</label>
-          </p>
-          <p class="filters-form__pay">
-            <h2 class="filters-title filters-title__pay">Стоимость в сутки (Р):</h2>
+            </p>
+          </fieldset>
+          <fieldset class="filters-form__pay">
+            <legend class="filters-title filters-title__pay">Стоимость в сутки (Р):</legend>
+            <p>
             <input type="text" name="price-from" id="price-from" class="pay__input" placeholder="От 0">
             <label for="price-from" class="pay__label visually-hidden">От 0</label>
+            </p>
+            <p>
             <input type="text" name="price-to" id="price-to" class="pay__input" placeholder="До 3000">
             <label for="price-to" class="pay__label visually-hidden">До 3000</label>
-            <input type="range" class="pay__range">
+            </p>
+            <div class="pay__price-range">
+              <div class="price-range__circle"></div>
+              <div class="price-range__line"></div>
+              <div class="price-range__circle"></div>
+              <div class="price-range__line price-range__line--opacity"></div>
+            </div>
             <button class="filters__btn">Показать</button>
-          </p>
+          </fieldset>
         </form>
       </section>
       <section class="hotels">
