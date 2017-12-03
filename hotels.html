@@ -38,71 +38,93 @@
         <!-- форма -->
         <form action="https://echo.htmlacademy.ru" method="get" class="filters-form">
           <fieldset class="filters-form-infastructure">
-            <legend class="filters-title filters-title__infastructure">Инфраструктура:</legend>
-            <p>
-            <input type="checkbox" name="swimming-pool" id="swimming-pool" value="Бассейн" class="infastructure__input" checked>
-            <label for="swimming-pool" class="infastructure__label">Бассейн</label>
-            </p>
-            <p>
-            <input type="checkbox" name="parking" id="parking" value="Парковка" class="infastructure__input">
-            <label for="parking" class="infastructure__label">Парковка</label>
-            </p>
-            <p>
-            <input type="checkbox" name="wifi" id="wifi" value="Wi-Fi" class="infastructure__input">
-            <label for="wifi" class="infastructure__label">Wi-Fi</label>
-            </p>
+            <div class="infastructure">
+              <legend class="filters-title filters-title__infastructure">Инфраструктура:</legend>
+              <p>
+                <input type="checkbox" name="swimming-pool" id="swimming-pool" value="Бассейн" class="infastructure__input" checked>
+                <label for="swimming-pool" class="infastructure__label">Бассейн</label>
+              </p>
+
+              <p>
+                <input type="checkbox" name="parking" id="parking" value="Парковка" class="infastructure__input">
+                <label for="parking" class="infastructure__label">Парковка</label>
+              </p>
+
+              <p>
+                <input type="checkbox" name="wifi" id="wifi" value="Wi-Fi" class="infastructure__input">
+                <label for="wifi" class="infastructure__label">Wi-Fi</label>
+              </p>
+            </div>
           </fieldset>
           <fieldset class="filters-form__type">
-            <legend class=" filters-title filters-title__type">Тип жилья:</legend>
-            <p>
-            <input type="checkbox" name="hotel" id="hotel" value="Гостиница" class="type__input" checked>
-            <label for="hotel" class="type__label">Гостиница</label>
-            </p>
-            <p>
-            <input type="checkbox" name="motel" id="motel" value="Мотель" class="type__input" checked>
-            <label for="motel" class="type__label">Мотель</label>
-            </p>
-            <p>
-            <input type="checkbox" name="apartament" id="apartament" value="Апартаменты" class="type__input" checked>
-            <label for="apartament" class="type__label">Апартаменты</label>
-            </p>
+            <div class="type">
+              <legend class=" filters-title filters-title__type">Тип жилья:</legend>
+              <p>
+                <input type="checkbox" name="hotel" id="hotel" value="Гостиница" class="type__input" checked>
+                <label for="hotel" class="type__label">Гостиница</label>
+              </p>
+
+              <p>
+                <input type="checkbox" name="motel" id="motel" value="Мотель" class="type__input" checked>
+                <label for="motel" class="type__label">Мотель</label>
+              </p>
+
+              <p>
+                <input type="checkbox" name="apartament" id="apartament" value="Апартаменты" class="type__input" checked>
+                <label for="apartament" class="type__label">Апартаменты</label>
+              </p>
+            </div>
           </fieldset>
           <fieldset class="filters-form__pay">
-            <legend class="filters-title filters-title__pay">Стоимость в сутки (Р):</legend>
-            <p>
-            <input type="text" name="price-from" id="price-from" class="pay__input" placeholder="От 0">
-            <label for="price-from" class="pay__label visually-hidden">От 0</label>
-            </p>
-            <p>
-            <input type="text" name="price-to" id="price-to" class="pay__input" placeholder="До 3000">
-            <label for="price-to" class="pay__label visually-hidden">До 3000</label>
-            </p>
-            <div class="pay__price-range">
-              <div class="price-range__circle"></div>
-              <div class="price-range__line"></div>
-              <div class="price-range__circle"></div>
-              <div class="price-range__line price-range__line--opacity"></div>
+            <div class="pay">
+              <legend class="filters-title filters-title__pay">Стоимость в сутки (Р):</legend>
+              <p>
+                <input type="text" name="price-from" id="price-from" class="pay__input" placeholder="От 0">
+                <label for="price-from" class="pay__label visually-hidden">От 0</label>
+              </p>
+
+              <p>
+                <input type="text" name="price-to" id="price-to" class="pay__input" placeholder="До 3000">
+                <label for="price-to" class="pay__label visually-hidden">До 3000</label>
+              </p>
+
+              <div class="pay__price-range">
+                <div class="price-range__circle"></div>
+                <div class="price-range__line"></div>
+                <div class="price-range__circle"></div>
+                <div class="price-range__line price-range__line--opacity"></div>
+              </div>
+              <button class="filters__btn">Показать</button>
             </div>
-            <button class="filters__btn">Показать</button>
           </fieldset>
         </form>
       </section>
-      <section class="hotels">
+      <section class="hotel">
         <h2 class="visually-hidden">гостиницы</h2>
-        <div class="hotels__head">
-          <b class="hotels__found">найдено:3</b>
+        <div class="hotel__head">
+          <b class="hotel__found">найдено:3</b>
           <ul class="hotel__filters">
-            <li class="filters__item">сортировка:</li>
-            <li class="filters__item filters__item--active"><a href="#">по цене</a></li>
-            <li class="filters__item"><a href="#">по типу</a></li>
-            <li class="filters__item"><a href="#">по рейтингу</a></li>
+            <li class="hotel__item">сортировка:</li>
+            <li class="hotel__item hotel__item--active">
+              <a href="#">по цене</a>
+            </li>
+            <li class="hotel__item">
+              <a href="#">по типу</a>
+            </li>
+            <li class="hotel__item">
+              <a href="#">по рейтингу</a>
+            </li>
           </ul>
-          <div class="arrow-up"></div>
-          <div class="arrow-down arrow-down--active"></div>
+          <div class="arrow-up">
+            <a href="#" class="arrow-up__link">стрелочка вверх</a>
+          </div>
+          <div class="arrow-down arrow-down--active">
+            <a href="#" class="arrow-down__link">стрелочка вниз</a>
+          </div>
         </div>
         <h2 class="visually-hidden">Список найденных гостиниц</h2>
-        <ul class="hotels__list">
-          <li class="hotels__item">
+        <ul class="hotel__list">
+          <li class="hotel__item">
             <div class="hotel__img">
               <img src="img/amara.jpg" alt="гостиница Amara resort & spa" width="135" height="90">
             </div>
@@ -123,7 +145,7 @@
               <p class="hotel__rate">рейтинг: 8,5</p>
             </div>
           </li>
-          <li class="hotels__item">
+          <li class="hotel__item">
             <div class="hotel__img">
               <img src="img/desert.jpg" alt="мотель desert quail inn" width="135" height="90">
             </div>
@@ -143,7 +165,7 @@
               <p class="hotel__rate">рейтинг: 8,9</p>
             </div>
           </li>
-          <li class="hotels__item">
+          <li class="hotel__item">
             <div class="hotel__img">
               <img src="img/villas.jpg" alt="апартаменты villas at poco diablo" width="135" height="90">
             </div>
@@ -168,9 +190,18 @@
     <footer class="footer">
       <a href="index.html" class="footer__link">#VISITSEDONA</a>
       <div class="footer__social">
-        <a href="#" class="social__link social__link--twitter">твиттер</a>
-        <a href="#" class="social__link social__link--facebook">фейсбук</a>
-        <a href="#" class="social__link social__link--youtube">ютуб</a>
+        <h2 class="visually-hidden">социальные сети</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--twitter">твиттер</a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--facebook">фейсбук</a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--youtube">ютуб</a>
+          </li>
+        </ul>
       </div>
       <p class="footer__copyright">
         <b>website by</b>
