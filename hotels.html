@@ -9,7 +9,8 @@
   <!-- Заголовок страницы -->
   <title>HTML Academy: Седона</title>
   <!-- подключение css -->
-
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   <body>
     <header class="header">
       <nav class="header__nav">
@@ -104,15 +105,15 @@
         <div class="hotel__head">
           <b class="hotel__found">найдено:3</b>
           <ul class="hotel__filters">
-            <li class="hotel__item--sort">сортировка:</li>
-            <li class="hotel__item hotel__item--active">
-              <a href="#">по цене</a>
+            <li class="hotel__item hotel__item--sort">сортировка:</li>
+            <li class="hotel__item">
+              <a href="#" class="hotel__link hotel__link--active">по цене</a>
             </li>
             <li class="hotel__item">
-              <a href="#">по типу</a>
+              <a href="#" class="hotel__link">по типу</a>
             </li>
             <li class="hotel__item">
-              <a href="#">по рейтингу</a>
+              <a href="#" class="hotel__link">по рейтингу</a>
             </li>
           </ul>
           <div class="arrow-up">
@@ -130,7 +131,7 @@
             </div>
             <div class="hotel__card">
               <h2 class="hotel__title">
-                <a href="#" class="hotel__link">Amara resort & spa</a>
+                <a href="#" class="hotel__link-name">Amara resort & spa</a>
               </h2>
               <b class="hotel__price">гостиница</b>
               <b class="hotel__price">от 4000 Р.</b>
@@ -153,7 +154,7 @@
             </div>
             <div class="hotel__card">
               <h2 class="hotel__title">
-                <a href="#" class="hotel__link">desert quail inn</a>
+                <a href="#" class="hotel__link-name">desert quail inn</a>
               </h2>
               <b class="hotel__price">мотель</b>
               <b class="hotel__price">от 3000 Р.</b>
@@ -175,7 +176,7 @@
             </div>
             <div class="hotel__card">
               <h2 class="hotel__title">
-                <a href="#" class="hotel__link">villas at poco diablo</a>
+                <a href="#" class="hotel__link-name">villas at poco diablo</a>
               </h2>
               <b class="hotel__price">апартаменты</b>
               <b class="hotel__price">от 2000 Р.</b>
