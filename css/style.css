@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'ptsans';
   src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'ptsansbold';
-  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
+  font-family: 'ptsans';
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
   font-weight: 700;
   font-style: bold;
 }
@@ -19,7 +19,7 @@ body {
   font-family: 'ptsans', Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 300;
+  font-weight: 400;
   color: #333333;
   text-transform: uppercase;
 
@@ -34,10 +34,6 @@ img {
 
 a {
   text-decoration: none;
-}
-
-button {
-    text-transform: uppercase;
 }
 
 .visually-hidden {
@@ -56,7 +52,7 @@ button {
 .header__list a {
     text-decoration: none;
     color: #000000;
-    font-family: 'ptsansbold', Arial, Helvetica, sans-serif;
+    font-family: 'ptsans', Arial, Helvetica, sans-serif;
     font-weight: 700;
 }
 
@@ -83,7 +79,7 @@ button {
 }
 
 .intro__title {
-    font-family: 'ptsansbold', Arial, Helvetica, sans-serif;
+    font-family: 'ptsans', Arial, Helvetica, sans-serif;
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
@@ -91,8 +87,9 @@ button {
 }
 
 .intro__text {
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 14px;]
+    line-height: 26px;
+    font-weight: 400;
 
 }
 
@@ -121,7 +118,7 @@ button {
 
 .interest {
     text-align: center;
-    font-family: 'ptsansbold', Arial, Helvetica, sans-serif;
+    font-family: 'ptsans', Arial, Helvetica, sans-serif;
     background-color: #FFF;
     
 }
@@ -137,13 +134,15 @@ button {
     font-size: 14px;
     line-height: 24px;
     color: #333333;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .interest__btn {
+    font: inherit;
     font-size: 14px;
     font-weight: 700;
     line-height: 26px;
+    text-transform: uppercase;
     color: #FFF;
     background-color: #766357;
     border: 0;
@@ -167,6 +166,7 @@ button {
 .form__btn {
     font: inherit;
     line-height: 26px; 
+    text-transform: uppercase;
     color: #FFF;
     background-color: #81b3d2;
     border: 0;
@@ -178,7 +178,7 @@ button {
 
 .footer__link {
     font-size: 21px;
-    font-family: 'ptsansbold', Arial, Helvetica, sans-serif;
+    font-family: 'ptsans', Arial, Helvetica, sans-serif;
     font-weight: 700;
     line-height: 26px;
     color: #000;
@@ -213,7 +213,7 @@ button {
 
 .filters__title {
     font-size: 16px;
-    font-family: 'ptsansbold', Arial, Helvetica, sans-serif;
+    font-family: 'ptsans', Arial, Helvetica, sans-serif;
     font-weight: 700;
     line-height: 21px;
 }
@@ -221,6 +221,7 @@ button {
 .filters__btn {
     font: inherit;
     color: #FFF;
+    text-transform: uppercase;
     border: 2px solid #FFF;
     border-radius: 2px;
     background: transparent;
@@ -233,7 +234,7 @@ button {
 .hotel__found {
     font-size: 21px;
     line-height: 26px;
-    font-family: 'ptsansbold', Arial, Helvetica, sans-serif;
+    font-family: 'ptsans', Arial, Helvetica, sans-serif;
     font-weight: 700;
 }
 
@@ -275,7 +276,7 @@ button {
 .hotel__list .hotel__link-name{
     text-decoration: none;
     color: #000000;
-    font-family: 'ptsansbold', Arial, Helvetica, sans-serif;
+    font-family: 'ptsans', Arial, Helvetica, sans-serif;
     font-weight: 700;
 
 }
@@ -290,15 +291,16 @@ button {
 }
 
 .hotel__about-link {
-    font-family: 'ptsansbold', Arial, Helvetica, sans-serif;
+    font-family: 'ptsans', Arial, Helvetica, sans-serif;
     font-weight: 700;
     color: #FFF;
     background-color: #81b3d2;
 }
 
 .hotel__book-btn {
-    font-family: 'ptsansbold', Arial, Helvetica, sans-serif;
+    font-family: 'ptsans', Arial, Helvetica, sans-serif;
     font-weight: 700;
+    text-transform: uppercase;
     color: #FFF;
     background-color: #766357;
     border: 0;   
